@@ -1,0 +1,347 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/Restaurent",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamPathTemplate": "/api/Restaurent",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Restaurent/getbylocation/{filter}",
+      "DownstreamPathTemplate": "/api/Restaurent/getbylocation/{filter}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Restaurent/getbyname/{filter}",
+      "DownstreamPathTemplate": "/api/Restaurent/getbyname/{filter}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Restaurent/{email}",
+      "DownstreamPathTemplate": "/api/Restaurent/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Restaurent/Getrestaurenthygine",
+      "DownstreamPathTemplate": "/api/Restaurent/Getrestaurenthygine",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Restaurent/Validate",
+      "DownstreamPathTemplate": "/api/Restaurent/Validate",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Restaurent/ApproveRestaurent/{email}",
+      "DownstreamPathTemplate": "/api/Restaurent/ApproveRestaurent/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamHttpMethod": [ "PUT" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Restaurent/DisableRestaurent/{email}",
+      "DownstreamPathTemplate": "/api/Restaurent/DisableRestaurent/{email}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Restaurent/Alldisablerestaurent",
+      "DownstreamPathTemplate": "/api/Restaurent/Alldisablerestaurent",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5259
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Dish",
+      "DownstreamPathTemplate": "/api/Dish",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5131
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Dish/EnablePermission/{code}",
+      "DownstreamPathTemplate": "/api/Dish/EnablePermission/{code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5131
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Dish/{code}",
+      "DownstreamPathTemplate": "/api/Dish/{code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5131
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Dish/DisablePermission/{code}",
+      "DownstreamPathTemplate": "/api/Dish/DisablePermission/{code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5131
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Dish/UpdatePrice/{code}",
+      "DownstreamPathTemplate": "/api/Dish/UpdatePrice/{code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5131
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Dish/UpdateDescription/{code}",
+      "DownstreamPathTemplate": "/api/Dish/UpdateDescription/{code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5131
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Dish/UpdateImage/{code}",
+      "DownstreamPathTemplate": "/api/Dish/UpdateImage/{code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5131
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Dish/UpdateAvaliableTime/{code}",
+      "DownstreamPathTemplate": "/api/Dish/UpdateAvaliableTime/{code}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5131
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Admin",
+      "DownstreamPathTemplate": "/api/Admin",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5017
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Admin/{id}",
+      "DownstreamPathTemplate": "/api/Admin/{id}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5017
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Admin/Validate",
+      "DownstreamPathTemplate": "/api/Admin/Validate",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5017
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+
+    },
+    {
+      "UpstreamPathTemplate": "/api/Feedback",
+      "DownstreamPathTemplate": "/api/Feedback",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5200
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Feedback/GetRating/{rating}",
+      "DownstreamPathTemplate": "/api/Feedback/GetRating/{rating}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5200
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Feedback/Getbyemail/{Id}",
+      "DownstreamPathTemplate": "/api/Feedback/Getbyemail/{Id}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5200
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+
+    {
+      "UpstreamPathTemplate": "/api/Order",
+      "DownstreamPathTemplate": "/api/Order",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5019
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/Order/GetOrder/{email}",
+      "DownstreamPathTemplate": "/api/Order/GetOrder/{email}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5019
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/User",
+      "DownstreamPathTemplate": "/api/User",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5049
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/{email}",
+      "DownstreamPathTemplate": "/api/User/{email}",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5049
+        }
+      ],
+      "UpstreamHttpMethod": [ "Get" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/Validate",
+      "DownstreamPathTemplate": "/api/User/Validate",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5049
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    },
+    {
+      "UpstreamPathTemplate": "/api/User/login",
+      "DownstreamPathTemplate": "/api/User/login",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5049
+        }
+      ],
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ]
+    }
+
+
+
+
+  ]
+
+}
